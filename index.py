@@ -22,7 +22,7 @@ if __name__ == "__main__":
               auxclase = bottelegram[clase]
               if auxclase[funcion]['grupo'] != None:
 
-                if (not 'secundary' in auxclase[funcion] and anterior != ""):
+                if (not 'secundary' in auxclase[funcion] and anterior != "" and anterior['grupo'] ==auxclase[funcion]['grupo']):
                   if (auxclase[funcion]['activo']):
                     print('-', mensaje, '(', funcion, ')')
 

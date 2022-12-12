@@ -21,10 +21,9 @@ class imprimo:
         self.imprimir = True
         return 'desea imprimir'
 
-    def document(self, url='documents/file_6.png', id=None):
+    def document(self, url='documents/file_6.png'):
         if (self.doc):
             try:
-                #file = self.bot.get_file(id)
                 conn = cups.Connection()
                 printers = conn.getPrinters()
                 for printer in printers:
@@ -39,6 +38,7 @@ class imprimo:
                     "job-state"]]
                 self.conexion.consulta(
                     f'INSERT INTO `impresion`( `idimpresion`, `estado`, `enviado`, `chat`, `fecha`) VALUES ("{impresion[0]}","{impresion[1]}","{0}","{id}",curdate())')
+                return "Imprimiendo"
             except Exception as e:
                 print("ha ocurrido un error "+repr(e))
 

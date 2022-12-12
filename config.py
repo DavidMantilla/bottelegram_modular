@@ -96,10 +96,11 @@ bottelegram = {'spotify': {
             'secundary': True},
         'doc': {
             'funcion': imprimir.document,
-            "activo": True,
+            "activo": False,
             'params': None,
             'secundary': True,
-            'grupo': None},
+            'grupo': None,
+            'content_types':"document"},
 },
     'recordatorio': {
         'despiertame': {
@@ -134,7 +135,7 @@ bottelegram = {'spotify': {
         'recuerdame': {
                         'funcion': recordatorio.pasos,
                         "activo": True,
-                        'grupo': 'despiertame',
+                        'grupo': 'recuerdame',
                         'params': {
                         "tipo": "",
                         "descripcion": 'que te debo recordar',
@@ -149,7 +150,7 @@ bottelegram = {'spotify': {
         'recuérdame': {
                         'funcion': recordatorio.pasos,
                         "activo": True,
-                        'grupo': 'despiertame',
+                        'grupo': 'recuerdame',
                         'params': {
                         "tipo": "",
                         "descripcion": '',
