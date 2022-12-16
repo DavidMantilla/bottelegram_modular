@@ -103,6 +103,7 @@ class recordatorio:
            return "ha habido un error"
         else:                           
             self.dict_recorda['estado'] = 1
+            self.dict_recorda['chat'] = 2
             self.guardar()
             return "guardado"
                 
@@ -161,6 +162,7 @@ class recordatorio:
            retorno+= dic['tipo']+" "+dic['hora']+" "+dic['descripcion']+"\n"
         return retorno
     def validate(self,text):
+        print("validate",text)
         dic={'tipo':0}
         descripcion=""
         

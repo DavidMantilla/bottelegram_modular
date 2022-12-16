@@ -22,6 +22,7 @@ class imprimo:
         return 'desea imprimir'
 
     def document(self, url='documents/file_6.png'):
+        print(url,self.doc)
         if (self.doc):
             try:
                 conn = cups.Connection()

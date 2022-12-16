@@ -1,10 +1,14 @@
 # Python module to diseno
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
+from dotenv import load_dotenv
 import pprint
 import webbrowser
 import pyautogui
 import time
+import os
+
+load_dotenv()
 
 
 
@@ -18,8 +22,8 @@ class spotify:
     sp = None
 
     def __init__(self):
-        self.sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id="5cf8b2af777741c5b38ee5f309994131",
-                                                            client_secret="004388617b734122a2a5a630b2f8d2f3",
+        self.sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=os.getenv('CLIENT_ID'),
+                                                            client_secret=os.getenv('CLIENT_SECRET'),
                                                             redirect_uri='http://127.0.0.1:9090',
                                                             scope=self.scopes))
         user_data = self.sp.current_user()
@@ -71,7 +75,7 @@ class spotify:
         playlist_id = ''
         if (type(a) == dict):
             if a["lista"] == "default":
-                playlist_id = '37i9dQZF1E35yx2VFmcHZn'
+                playlist_id = os.getenv("PLAY_LISTID")
                
             else:
                 if (a['lista'].isnumeric()):

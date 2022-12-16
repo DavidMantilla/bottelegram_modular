@@ -45,7 +45,7 @@ bottelegram = {'spotify': {
                      "activo": True,
                      'params': None,
                      'grupo': None},
-    'ultima cancion':
+    'última canción':
                     {'funcion': spotify.recently,
                      "activo": True,
                      'params': None,
@@ -110,10 +110,7 @@ bottelegram = {'spotify': {
                         'params': {
                         "tipo": "",
                         "hora": "envia la hora",
-                        "repetir": ["desea repetir", 'menu'],
-                        "fecha": ['escriba la fecha aa/mm/dd', 'no'],
-                        "dias": ["escribe los dias lun,mar,mie,jue,vie,sab,dom ,  (lun-vie) ", 'si'],
-                        "chat": "",
+                        "repetir": ["desea repetir", {"fecha": 'escriba la fecha aa/mm/dd',"dias": "escribe los dias lun,mar,mie,jue,vie,sab,dom ,  (lun-vie) ",}],
                         },
                         'validate': recordatorio.validate,
                         'comand': True},
@@ -124,11 +121,7 @@ bottelegram = {'spotify': {
                         'params': {
                         "tipo": "",
                         "hora": "envia la hora",
-                        "repetir": ["desea repetir", 'menu'],
-                        "fecha": ['escriba la fecha aa/mm/dd', 'no'],
-                        "dias": ["escribe los dias lun,mar,mie,jue,vie,sab,dom ,  (lun-vie) ", 'si'],
-                        "chat": "",
-
+                        "repetir": ["desea repetir", {"fecha": 'escriba la fecha aa/mm/dd',"dias": "escribe los dias lun,mar,mie,jue,vie,sab,dom ,  (lun-vie) ",}],
                         },
                         'validate': recordatorio.validate,
                         'comand': True},
@@ -138,12 +131,8 @@ bottelegram = {'spotify': {
                         'grupo': 'recuerdame',
                         'params': {
                         "tipo": "",
-                        "descripcion": 'que te debo recordar',
                         "hora": "envia la hora",
-                        "repetir": ["desea repetir", 'menu'],
-                        "fecha": ['escriba la fecha aa/mm/dd', 'no'],
-                        "dias": ["escribe los dias lun,mar,mie,jue,vie,sab,dom ,  (lun-vie) ", 'si'],
-                        "chat": "",
+                        "repetir": ["desea repetir", {"fecha": 'escriba la fecha aa/mm/dd',"dias": "escribe los dias lun,mar,mie,jue,vie,sab,dom ,  (lun-vie) ",}],
                         },
                         'validate': recordatorio.validate,
                         'comand': True},
@@ -153,12 +142,8 @@ bottelegram = {'spotify': {
                         'grupo': 'recuerdame',
                         'params': {
                         "tipo": "",
-                        "descripcion": '',
                         "hora": "envia la hora",
-                        "repetir": ["desea repetir", 'menu'],
-                        "fecha": ['escriba la fecha aa/mm/dd', 'no'],
-                        "dias": ["escribe los dias lun,mar,mie,jue,vie,sab,dom ,  (lun-vie) ", 'si'],
-                        "chat": "",
+                        "repetir": ["desea repetir", {"fecha": 'escriba la fecha aa/mm/dd',"dias": "escribe los dias lun,mar,mie,jue,vie,sab,dom ,  (lun-vie) ",}],
                         },
                         'validate': recordatorio.validate,
                         'comand': True},

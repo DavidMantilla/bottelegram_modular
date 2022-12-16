@@ -109,3 +109,5 @@ Aquí hay unos ejemplos de cómo se pueden usar los comandos y funciones definid
 
 bottelegram.spotify['spotify info']
 
+Este código es un bot de Telegram desarrollado en Python. El bot se inicializa utilizando el token generado por BotFather, y se utiliza la librería telebot para crear la instancia del bot y gestionar sus mensajes. El código utiliza la función message_handler de la librería telebot para definir las acciones que el bot realizará cuando reciba distintos tipos de mensajes. Cuando el bot recibe un mensaje que contenga los comandos start o help, enviará un mensaje de bienvenida y una lista de opciones disponibles. Si recibe cualquier otro tipo de mensaj
+
